@@ -5,7 +5,8 @@ class Gemstone(Player):
     """
     An item of cultural or historical interest. 
     
-    The responsibility of an Artifact is to provide a message about itself.
+    The responsibility of an Gemstone is to provide a message about its value
+    and adjust points.
 
     Attributes:
         _message (string): A short description about the artifact.
@@ -15,11 +16,12 @@ class Gemstone(Player):
         self._message = ""
         
     def get_message(self):
-        """Gets the artifact's message.
+        """Gets the artifact's message. Adjust points
         
         Returns:
             string: The message.
         """
+        
         return self._message
     
     def set_message(self, message):
