@@ -1,4 +1,4 @@
-from GREED.Casting.player import Player
+from GREED.casting.player import Player
 
 
 class Artifact(Actor):
