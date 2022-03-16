@@ -1,7 +1,7 @@
 from GREED.casting.player import Player
 
 
-class Artifact(Actor):
+class Gemstone(Player):
     """
     An item of cultural or historical interest. 
     
