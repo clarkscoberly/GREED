@@ -1,7 +1,7 @@
 import os
 import random
 
-from game.casting.actor import Actor
+from game.casting.player import Player
 from game.casting.artifact import Artifact
 from game.casting.cast import Cast
 
@@ -33,24 +33,24 @@ def main():
     cast = Cast()
     
     # create the banner
-    banner = Actor()
+    banner = Player()
     banner.set_text("")
     banner.set_font_size(FONT_SIZE)
     banner.set_color(WHITE)
     banner.set_position(Point(CELL_SIZE, 0))
-    cast.add_actor("banners", banner)
+    cast.add_player("banners", banner)
     
     # create the robot
     x = int(MAX_X / 2)
     y = int(MAX_Y / 2)
     position = Point(x, y)
 
-    robot = Actor()
+    robot = Player()
     robot.set_text("#")
     robot.set_font_size(FONT_SIZE)
     robot.set_color(WHITE)
     robot.set_position(position)
-    cast.add_actor("robots", robot)
+    cast.add_player("robots", robot)
     
     # create the artifacts
     with open(DATA_PATH) as file:
