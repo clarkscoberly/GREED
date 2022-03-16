@@ -1,17 +1,17 @@
 import os
 import random
 
-from game.casting.player import Player
-from game.casting.artifact import Artifact
-from game.casting.cast import Cast
+from GREED.casting.player import Player
+from GREED.casting.gemstone import Gemstone
+from GREED.casting.cast import Cast
 
-from game.directing.director import Director
+from GREED.directing.director import Director
 
-from game.services.keyboard_service import KeyboardService
-from game.services.video_service import VideoService
+from GREED.services.keyboard_services import KeyboardService
+from GREED.services.video_services import VideoService
 
-from game.shared.color import Color
-from game.shared.point import Point
+from GREED.shared.color import Color
+from GREED.shared.position import Position
 
 
 FRAME_RATE = 12
